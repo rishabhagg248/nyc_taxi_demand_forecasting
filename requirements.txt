@@ -1,0 +1,8 @@
+# Optional: for running BigQuery queries or analysis from Python locally.
+# The ingestion itself is shell (curl / gcloud / bq); the dashboard has its
+# own pinned app/requirements.txt for Cloud Run.
+google-cloud-bigquery>=3.0
+google-cloud-bigquery-storage>=2.0
+db-dtypes>=1.0
+pandas>=2.0
+pyarrow>=14.0

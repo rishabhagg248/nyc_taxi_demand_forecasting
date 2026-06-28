@@ -1,0 +1,34 @@
+# --- Secrets: never commit these ---
+*.json                      # service-account keys live as JSON — keep them out
+!package.json
+!package-lock.json
+.env
+.env.*
+.streamlit/secrets.toml
+
+# --- Raw data: do not commit trip files ---
+data/
+*.parquet
+*.csv
+!sql/**/*.csv               # allow small reference CSVs checked into sql/, if any
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Cloud / build ---
+*.log
